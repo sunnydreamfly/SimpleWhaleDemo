@@ -2,7 +2,9 @@ name: CI to Docker Hub Test
 
 on:
   push:
-    branches: [ master ]
+    # branches: [ master ]
+    tags:
+      - "V*.*.*"
 
 jobs:
 
